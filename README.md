@@ -1,28 +1,32 @@
-# AngularTourOfHeroes
+<a href="https://angular.io/tutorial/tour-of-heroes#tour-of-heroes-application-and-tutorial">
+  <h1>AngularTourOfHeroes</h1>
+</a>
+
+## Summary
+
+Implemented a tutorial as part of studying <em>Angular</em>, and implemented a unit test using <em>Karma</em> and an E2E test using <em>testcafe</em> as a study of QA testing.
+
+<img width="100%" alt="Screenshot 2023-06-10 at 11 47 32" src="https://github.com/sabakantaro/angular-tour-of-heroes/assets/79243411/aedb7c45-ede1-434b-b98f-ab986bb3d4eb">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
 ## Running unit tests
+
+Check if each component is generated correctly
+
+<img width="100%" alt="Screenshot 2023-06-10 at 10 20 59" src="https://github.com/sabakantaro/angular-tour-of-heroes/assets/79243411/485bb90a-9925-4fc7-8441-96079ccd6d9e">
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Check if user input produces the intended output across the application.
 
-## Further help
+- Navigation testing
+- Search by name testing
+- Message testing
+- Add and delete a hero name testing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# angular-tour-of-heroes
+https://github.com/sabakantaro/angular-tour-of-heroes/assets/79243411/7deedf79-ae95-4095-9bca-1f0f29e3a3ab
+
+Run `npm run test:e2e` to execute the end-to-end tests via a testcafe.
