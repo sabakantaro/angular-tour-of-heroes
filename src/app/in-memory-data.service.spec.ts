@@ -10,7 +10,7 @@ describe('InMemoryDataService', () => {
     service = TestBed.inject(InMemoryDataService);
   });
 
-  it('should be created', () => {
+  it('should create InMemoryDataService', () => {
     expect(service).toBeTruthy();
   });
 });

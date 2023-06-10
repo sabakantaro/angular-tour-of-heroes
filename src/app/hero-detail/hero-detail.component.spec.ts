@@ -15,7 +15,7 @@ describe('HeroDetailComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create HeroDetailComponent', () => {
     expect(component).toBeTruthy();
   });
 });
