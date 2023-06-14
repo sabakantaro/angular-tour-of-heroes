@@ -30,3 +30,7 @@ Check if user input produces the intended output across the application.
 https://github.com/sabakantaro/angular-tour-of-heroes/assets/79243411/7deedf79-ae95-4095-9bca-1f0f29e3a3ab
 
 Run `npm run test:e2e` to execute the end-to-end tests via a testcafe.
+
+## Automated testing
+
+Automated test execution via a Githhub Actions
