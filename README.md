@@ -33,4 +33,4 @@ Run `npm run test:e2e` to execute the end-to-end tests via a testcafe.
 
 ## Automated testing
 
-Automated test execution via a Githhub Actions
+Automated test execution via a Github Actions

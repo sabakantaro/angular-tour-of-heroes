@@ -10,4 +10,4 @@ jobs:
       - name: Install TestCafe from 'npm' and Run Tests
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome e2e/tests.js"
+          args: "export NODE_ENV='production' && chrome e2e/tests.js"
