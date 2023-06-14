@@ -1,11 +1,6 @@
 import { Selector } from "testcafe";
 
-const appUrl =
-  process.env.NODE_ENV === "production"
-    ? "https://angular-tour-of-heroes-beige-six.vercel.app"
-    : "http://localhost:4200";
-
-fixture`App`.page`${appUrl}`;
+fixture`App`.page`https://angular-tour-of-heroes-beige-six.vercel.app`;
 
 // Navigation tests
 test("should navigate to heroes", async (t) => {
