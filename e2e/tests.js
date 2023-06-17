@@ -1,10 +1,10 @@
 import { Selector } from "testcafe";
 
-fixture`App`.page`http://localhost:4200`;
+fixture`App`.page`https://angular-tour-of-heroes-beige-six.vercel.app`;
 
 // Navigation tests
 test("should navigate to heroes", async (t) => {
-  const heroesLink = Selector('a[href*="heroes"]');
+  const heroesLink = Selector('a[class="heroes-link"]');
   const heroesTitle = Selector("h2").innerText;
 
   await t.click(heroesLink);
@@ -13,7 +13,7 @@ test("should navigate to heroes", async (t) => {
 });
 
 test("should navigate to dashboard", async (t) => {
-  const dashboardLink = Selector('a[href*="dashboard"]');
+  const dashboardLink = Selector('a[class="dashboard-link"');
   const dashboardTitle = Selector("h2").innerText;
 
   await t.click(dashboardLink);
@@ -53,7 +53,7 @@ test("should display message", async (t) => {
 
 // Add and delete tests
 test("should add new hero", async (t) => {
-  const heroesLink = Selector('a[href*="heroes"]');
+  const heroesLink = Selector('a[class="heroes-link"]');
   const addHeroButton = Selector('button[class="add-button"]');
   const heroName = "Test Hero";
   const heroNameInput = Selector('input[id="new-hero"]');
@@ -72,7 +72,7 @@ test("should add new hero", async (t) => {
 });
 
 test("should delete hero", async (t) => {
-  const heroesLink = Selector('a[href*="heroes"]');
+  const heroesLink = Selector('a[class="heroes-link"]');
   const deleteButton = Selector('button[class="delete"]');
   const heroName = "Test Hero";
   const heroDetail = Selector("h2").innerText;
