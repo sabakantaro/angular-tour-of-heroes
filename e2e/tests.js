@@ -1,7 +1,6 @@
 import { Selector } from "testcafe";
 
-// fixture`App`.page`https://angular-tour-of-heroes-beige-six.vercel.app`;
-fixture`App`.page`http://localhost:4200`;
+fixture`App`.page`https://angular-tour-of-heroes-beige-six.vercel.app`;
 
 // Navigation tests
 test("should navigate to heroes", async (t) => {
