@@ -1,13 +1,28 @@
 name: Basic TestCafe Workflow
-on: [push]
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+  workflow_dispatch:
 
 jobs:
   build:
     name: Run TestCafe Tests
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Install TestCafe from 'npm' and Run Tests
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install
+      - name: Run TestCafe Tests
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome e2e/tests.js"
+          args: "chrome:headless e2e/tests.js"
